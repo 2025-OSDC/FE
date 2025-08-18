@@ -1,42 +1,49 @@
-import { Link, useLocation } from 'react-router-dom'
-import { navItems } from '../constants/navigation'
+import { Link } from "react-router-dom";
+import { navItems, GITHUB_URL } from "../constants/navigation";
+import { Logo } from "./icons/Logo";
+import { GitHubIcon } from "./icons/GithubIcon";
+import { LogoText } from "./icons/LogoText";
 
 export default function Header() {
-  const location = useLocation()
-
-  const isActive = (path: string) => {
-    if (path === '/') {
-      return location.pathname === '/'
-    }
-    return location.pathname.startsWith(path)
-  }
-
   return (
-    <nav className="bg-white shadow-sm border-b">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center space-x-8">
-            <Link to="/" className="text-xl font-semibold text-gray-900">
-              colbrush
+    <nav
+      className="w-full bg-white shadow-sm"
+      style={{ boxShadow: "0px 0px 6px 0px rgba(0, 0, 0, 0.17)" }}
+    >
+      <div className="flex h-16 w-full items-center justify-between px-24">
+        <div className="flex items-center">
+          <Link to="/" className="flex items-center gap-2">
+            <Logo />
+            <LogoText />
+          </Link>
+        </div>
+
+        <div className="flex items-center gap-10">
+          {navItems.map((item) => (
+            <Link
+              key={item.name}
+              to={item.path}
+              className="text-base font-normal text-[#3D4852] transition-colors hover:text-black"
+            >
+              {item.label}
             </Link>
-            <div className="flex space-x-4">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                    isActive(item.path)
-                      ? 'bg-blue-100 text-blue-700'
-                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              ))}
+          ))}
+
+          <a
+            href={GITHUB_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2.5 rounded-lg border border-[#3D4852] px-2.5 py-2 transition-colors hover:bg-gray-50"
+          >
+            <div className="flex items-center gap-2.5">
+              <GitHubIcon />
+              <span className="text-sm font-normal text-[#3D4852] hover:text-black">
+                GitHub
+              </span>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </nav>
-  )
+  );
 }

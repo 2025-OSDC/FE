@@ -1,6 +1,6 @@
-import { Routes, Route } from 'react-router-dom'
-import Layout from './layouts/Layout'
-import { Api, Install, Usage } from './pages'
+import { Routes, Route } from "react-router-dom";
+import Layout from "./layouts/Layout";
+import { Api, Install, Usage } from "./pages";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Route path="usage" element={<Usage />} />
       </Route>
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;
