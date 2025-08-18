@@ -23,7 +23,7 @@ export default function Header() {
             <Link
               key={item.name}
               to={item.path}
-              className="text-base font-normal text-[#3D4852] transition-colors hover:text-black"
+              className="text-gray-blue text-base font-normal transition-colors hover:text-black"
             >
               {item.label}
             </Link>
@@ -33,11 +33,11 @@ export default function Header() {
             href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2.5 rounded-lg border border-[#3D4852] px-2.5 py-2 transition-colors hover:bg-gray-50"
+            className="border-gray-blue flex items-center justify-center gap-2.5 rounded-lg border px-2.5 py-2 transition-colors hover:bg-gray-50"
           >
             <div className="flex items-center gap-2.5">
               <GitHubIcon />
-              <span className="text-sm font-normal text-[#3D4852] hover:text-black">
+              <span className="text-gray-blue text-sm font-normal hover:text-black">
                 GitHub
               </span>
             </div>
