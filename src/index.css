@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Pretendard Variable";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/PretendardVariable.woff2") format("woff2-variations");
+}
+
 @theme {
   --color-bg: #ffffff;
   --color-red: #ff2727;
@@ -10,4 +18,6 @@
   --color-light-gray: #d9d9d9;
   --color-white: #ffffff;
   --color-black: #000000;
+
+   --font-pretendard: "Pretendard Variable"
 }
