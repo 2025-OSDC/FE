@@ -7,7 +7,7 @@ interface MasicIconProps extends SVGProps<SVGSVGElement> {
   height?: number;
 }
 
-export const MasicIcon = memo<MasicIconProps>(
+export const MagicIcon = memo<MasicIconProps>(
   ({ size, width, height, className, ...props }) => {
     const w = width || size || 40;
     const h = height || size || 40;
@@ -31,4 +31,4 @@ export const MasicIcon = memo<MasicIconProps>(
   },
 );
 
-MasicIcon.displayName = "MasicIcon";
+MagicIcon.displayName = "MagicIcon";
