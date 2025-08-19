@@ -16,11 +16,13 @@
 @theme {
   --color-bg: #ffffff;
   --color-red: #ff2727;
+  --color-error: #CF1E25;
   --color-yellow: #FFB720;
-  --color-green: #52c93f;
+  --color-light-green: #52c93f;
+  --color-green: #008543;
   --color-blue: #006aff;
+  --color-info: #00549F;
   --color-purple: #884DFF;
-  --color-gray-blue: #3d4852;
   --color-gray: #909090;
   --color-light-gray: #d9d9d9;
   --color-white: #ffffff;
@@ -31,42 +33,48 @@
   --font-pretendard: "Pretendard Variable"
 }
 
-[data-theme='deuteranopia'] {
+[data-theme='deuteranopia']{
   --color-bg: #ffffff;
   --color-red: #ff2727;
-  --color-yellow: #ffb720;
-  --color-green: #00ce6c;
+  --color-error: #CF1E25;
+  --color-yellow: #FFB720;
+  --color-light-green: #00ce6c;
+  --color-green: #008543;
   --color-blue: #006aff;
+  --color-info: #00549F;
   --color-purple: #f100a6;
-  --color-gray-blue: #3d4852;
   --color-gray: #909090;
   --color-light-gray: #d9d9d9;
   --color-white: #ffffff;
   --color-black: #000000;
 }
 
-[data-theme='protanopia'] {
+[data-theme='protanopia']{
   --color-bg: #ffffff;
   --color-red: #ff2727;
-  --color-yellow: #ffb720;
-  --color-green: #00d29a;
+  --color-error: #CF1E25;
+  --color-yellow: #FFB720;
+  --color-light-green: #00d29a;
+  --color-green: #00887b;
   --color-blue: #0091d3;
-  --color-purple: #884dff;
-  --color-gray-blue: #3d4852;
+  --color-info: #00549F;
+  --color-purple: #884DFF;
   --color-gray: #909090;
   --color-light-gray: #d9d9d9;
   --color-white: #ffffff;
   --color-black: #000000;
 }
 
-[data-theme='tritanopia'] {
+[data-theme='tritanopia']{
   --color-bg: #ffffff;
   --color-red: #ff2727;
-  --color-yellow: #ffb720;
-  --color-green: #52c93f;
+  --color-error: #CF1E25;
+  --color-yellow: #FFB720;
+  --color-light-green: #52c93f;
+  --color-green: #667c12;
   --color-blue: #006aff;
-  --color-purple: #884dff;
-  --color-gray-blue: #3d4852;
+  --color-info: #00549F;
+  --color-purple: #884DFF;
   --color-gray: #909090;
   --color-light-gray: #d9d9d9;
   --color-white: #ffffff;

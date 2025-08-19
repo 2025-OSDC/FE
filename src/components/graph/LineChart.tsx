@@ -43,7 +43,7 @@ function LineChart() {
 
     chart?.get("colors")?.set("colors", [
       am5.color(rootStyle.getPropertyValue('--color-blue')),
-      am5.color(rootStyle.getPropertyValue('--color-green')),
+      am5.color(rootStyle.getPropertyValue('--color-light-green')),
       am5.color(rootStyle.getPropertyValue('--color-red')),
     ]);
 

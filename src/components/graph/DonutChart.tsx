@@ -18,7 +18,7 @@ const DonutChart = () => {
 
   const data = [
     { category: "잠재 고객", value: 54, color: rootStyle.getPropertyValue('--color-blue').trim() },
-    { category: "충성 고객", value: 20, color: rootStyle.getPropertyValue('--color-green').trim() },
+    { category: "충성 고객", value: 20, color: rootStyle.getPropertyValue('--color-light-green').trim() },
     { category: "신규 고객", value: 26, color: rootStyle.getPropertyValue('--color-red').trim() }
   ]
 

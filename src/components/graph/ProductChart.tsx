@@ -22,7 +22,7 @@ const ProductChart = () => {
       id: "02",
       name: "아이크림",
       count: 29,
-      color: rootStyle.getPropertyValue('--color-green'),
+      color: rootStyle.getPropertyValue('--color-light-green'),
     },
     {
       id: "03",
