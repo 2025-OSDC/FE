@@ -49,13 +49,12 @@ export default function Usage() {
               <TodoList state={"시작 전"} todos={TODOS["시작 전"]} />
               <TodoList state={"진행 중"} todos={TODOS["진행 중"]} />
               <TodoList state={"완료"} todos={TODOS["완료"]} />
-
             </div>
           </div>
         </div>
 
         {/* 툴팁 */}
-        <div className={`flex flex-col gap-10`}>
+        <div className={`flex flex-col gap-10 px-[8%]`}>
           <div className={`flex flex-row gap-10`}>
             <CustomTooltip state={"WARNING"} />
             <CustomTooltip state={"INFO"} />

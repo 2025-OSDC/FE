@@ -18,14 +18,14 @@ const CustomTooltip = ({
     <div className={`flex flex-col items-center gap-5 w-full`}>
       <div className={`
         ${state === "WARNING" ? "bg-yellow" : `
-        ${state === "ERROR" ? "bg-error" : `
-        ${state === "INFO" ? "bg-info" : `bg-green`}`}`}
+        ${state === "ERROR" ? "bg-deep-red" : `
+        ${state === "INFO" ? "bg-deep-blue" : `bg-green`}`}`}
         relative px-6.5 py-6 rounded-[6px] shadow-[0_10px_10px_rgba(0,0,0,0.3)] w-full`}>
         <p className={`text-[20px] text-white font-medium text-start`}>{text}</p>
         <div className={`
           ${state === "WARNING" ? "bg-yellow" : `
-          ${state === "ERROR" ? "bg-error" : `
-          ${state === "INFO" ? "bg-info" : `bg-green`}`}`} 
+          ${state === "ERROR" ? "bg-deep-red" : `
+          ${state === "INFO" ? "bg-deep-blue" : `bg-green`}`}`} 
           absolute left-[50%] -translate-x-1/2 -bottom-[10%] rotate-45 w-4 h-4`} />
       </div>
 
@@ -34,10 +34,10 @@ const CustomTooltip = ({
           className={`text-yellow w-10 h-10`} />
       ) : state === "ERROR" ? (
         <ErrorIcon
-          className={`text-error w-10 h-10`} />
+          className={`text-deep-red w-10 h-10`} />
       ) : state === "INFO" ? (
         <InfoIcon
-          className={`text-info w-10 h-10`} />
+          className={`text-deep-blue w-10 h-10`} />
       ) : (
         <SuccessIcon
           className={`text-green w-10 h-10`} />

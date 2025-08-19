@@ -101,10 +101,12 @@ const DonutChart = () => {
         <p className={`text-[12px] rounded-[2px] bg-gray-100 px-2 py-1 text-gray-400`}>Today</p>
       </div>
 
-      <div
-        ref={chartRef}
-        className="w-full aspect-square mb-6"
-      />
+      <div className={`flex items-center justify-center`}>
+        <div
+          ref={chartRef}
+          className="w-[70%] aspect-square mb-2"
+        />
+      </div>
 
       <div className="p-2">
         <div className="flex justify-center gap-4 flex-col">

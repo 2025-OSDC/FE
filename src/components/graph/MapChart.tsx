@@ -9,10 +9,10 @@ const MapChart = () => {
 
   const rootStyle = getComputedStyle(document.documentElement);
   const colors = {
-    red: rootStyle.getPropertyValue('--color-red').trim(),
+    red: rootStyle.getPropertyValue('--color-deep-red').trim(),
     yellow: rootStyle.getPropertyValue('--color-yellow').trim(),
     green: rootStyle.getPropertyValue('--color-green').trim(),
-    blue: rootStyle.getPropertyValue('--color-blue').trim(),
+    blue: rootStyle.getPropertyValue('--color-deep-blue').trim(),
     purple: rootStyle.getPropertyValue('--color-purple').trim(),
   }
 
