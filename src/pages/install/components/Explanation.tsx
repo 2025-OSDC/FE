@@ -4,6 +4,7 @@ import { PaletteIcon } from "../../../components/icons/PaletteIcon";
 import { PeopleIcon } from "../../../components/icons/PeopleIcon";
 import { SlidersIcon } from "../../../components/icons/SlidersIcon";
 import { WindowIcon } from "../../../components/icons/WindowIcon";
+import Description from "../../api/components/description";
 import { INSTALL_CONSTANTS } from "../constants";
 import FeatureItem from "./FeatureItem";
 
@@ -15,7 +16,7 @@ const Explanation = () => {
           icon={<PeopleIcon />}
           title={INSTALL_CONSTANTS.EXPLANATION.COLOR_BLIND_SUPPORT.TITLE}
         >
-          <p className="flex flex-wrap items-center gap-1">
+          <Description className="leading-7 sm:leading-8">
             {[
               INSTALL_CONSTANTS.CODES.PROTANOPIA,
               INSTALL_CONSTANTS.CODES.DEUTERANOPIA,
@@ -23,63 +24,53 @@ const Explanation = () => {
               INSTALL_CONSTANTS.CODES.ACHROMATOPSIA,
             ].map((type, index, array) => (
               <span key={type}>
-                <Code>{type}</Code>
+                <Code className="text-black">{type}</Code>
                 {index < array.length - 1 && " , "}
               </span>
             ))}
-            <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
-              {INSTALL_CONSTANTS.EXPLANATION.COLOR_BLIND_SUPPORT.DESCRIPTION}
-            </span>
-          </p>
+            {INSTALL_CONSTANTS.EXPLANATION.COLOR_BLIND_SUPPORT.DESCRIPTION}
+          </Description>
         </FeatureItem>
 
         <FeatureItem
           icon={<MagicIcon />}
           title={INSTALL_CONSTANTS.EXPLANATION.AUTO_GENERATION.TITLE}
         >
-          <p className="flex flex-wrap items-center gap-1">
-            <Code>{INSTALL_CONSTANTS.CODES.THEME}</Code>
-            <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
-              {INSTALL_CONSTANTS.EXPLANATION.AUTO_GENERATION.DESCRIPTION}
-            </span>
-          </p>
+          <Description className="leading-7 sm:leading-8">
+            <Code className="text-black">{INSTALL_CONSTANTS.CODES.THEME}</Code>
+            {INSTALL_CONSTANTS.EXPLANATION.AUTO_GENERATION.DESCRIPTION}
+          </Description>
         </FeatureItem>
 
         <FeatureItem
           icon={<WindowIcon />}
           title={INSTALL_CONSTANTS.EXPLANATION.THEME_PROVIDER.TITLE}
         >
-          <p className="flex flex-wrap items-center gap-1">
-            <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
-              {INSTALL_CONSTANTS.EXPLANATION.THEME_PROVIDER.DESCRIPTION_PREFIX}
-            </span>
-            <Code>{INSTALL_CONSTANTS.CODES.THEME_PROVIDER}</Code>
-            <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
-              {INSTALL_CONSTANTS.EXPLANATION.THEME_PROVIDER.DESCRIPTION_SUFFIX}
-            </span>
-          </p>
+          <Description className="leading-7 sm:leading-8">
+            {INSTALL_CONSTANTS.EXPLANATION.THEME_PROVIDER.DESCRIPTION_PREFIX}
+            <Code className="text-black">
+              {INSTALL_CONSTANTS.CODES.THEME_PROVIDER}
+            </Code>
+            {INSTALL_CONSTANTS.EXPLANATION.THEME_PROVIDER.DESCRIPTION_SUFFIX}
+          </Description>
         </FeatureItem>
 
         <FeatureItem
           icon={<PaletteIcon />}
           title={INSTALL_CONSTANTS.EXPLANATION.THEME_SWITCHER.TITLE}
         >
-          <p>
-            <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
-              {INSTALL_CONSTANTS.EXPLANATION.THEME_SWITCHER.DESCRIPTION}
-            </span>
-          </p>
+          <Description>
+            {INSTALL_CONSTANTS.EXPLANATION.THEME_SWITCHER.DESCRIPTION}
+          </Description>
         </FeatureItem>
 
         <FeatureItem
           icon={<SlidersIcon />}
           title={INSTALL_CONSTANTS.EXPLANATION.CUSTOMIZATION.TITLE}
         >
-          <p>
-            <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
-              {INSTALL_CONSTANTS.EXPLANATION.CUSTOMIZATION.DESCRIPTION}
-            </span>
-          </p>
+          <Description>
+            {INSTALL_CONSTANTS.EXPLANATION.CUSTOMIZATION.DESCRIPTION}
+          </Description>
         </FeatureItem>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import Code from "../../../components/code";
 import CodeBlock from "../../../components/codeblock";
+import Description from "../../api/components/description";
 import { INSTALL_CONSTANTS } from "../constants";
 import StepItem from "./StepItem";
 
@@ -96,22 +97,20 @@ const InstallationStep = () => {
               <div className="text-sm font-normal text-white sm:text-base lg:text-lg">{`}`}</div>
             </CodeBlock>
 
-            <p className="mt-3">
-              <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
-                {INSTALL_CONSTANTS.INSTALLATION.STEP2.DESCRIPTION_PREFIX}
-              </span>
-              <Code>{INSTALL_CONSTANTS.CODES.INDEX_CSS}</Code>
-              <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
-                {INSTALL_CONSTANTS.INSTALLATION.STEP2.DESCRIPTION_SUFFIX}
-              </span>
-            </p>
+            <Description className="mt-3 leading-7 sm:leading-8">
+              {INSTALL_CONSTANTS.INSTALLATION.STEP2.DESCRIPTION_PREFIX}
+              <Code className="text-black">
+                {INSTALL_CONSTANTS.CODES.INDEX_CSS}
+              </Code>
+              {INSTALL_CONSTANTS.INSTALLATION.STEP2.DESCRIPTION_SUFFIX}
+            </Description>
 
-            <p className="mt-3">
-              <Code>{INSTALL_CONSTANTS.CODES.THEME}</Code>
-              <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
-                {INSTALL_CONSTANTS.INSTALLATION.STEP2.EXPLANATION}
-              </span>
-            </p>
+            <Description className="leading-7 sm:leading-8">
+              <Code className="text-black">
+                {INSTALL_CONSTANTS.CODES.THEME}
+              </Code>
+              {INSTALL_CONSTANTS.INSTALLATION.STEP2.EXPLANATION}
+            </Description>
           </StepItem>
 
           <StepItem
@@ -124,14 +123,14 @@ const InstallationStep = () => {
               </div>
             </CodeBlock>
 
-            <p className="mt-3">
+            <Description className="mt-3 leading-7 sm:leading-8">
               <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP3.DESCRIPTION}
               </span>
               {INSTALL_CONSTANTS.INSTALLATION.STEP3.COLOR_BLIND_TYPES.map(
                 (type, index) => (
                   <span key={type}>
-                    <Code>{type}</Code>
+                    <Code className="text-black">{type}</Code>
                     {index <
                       INSTALL_CONSTANTS.INSTALLATION.STEP3.COLOR_BLIND_TYPES
                         .length -
@@ -142,17 +141,14 @@ const InstallationStep = () => {
               <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP3.DESCRIPTION_SUFFIX}
               </span>
-            </p>
-
-            <p className="mt-3">
-              <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
-                {INSTALL_CONSTANTS.INSTALLATION.STEP3.PATH_DESCRIPTION_PREFIX}
-              </span>
-              <Code>{INSTALL_CONSTANTS.INSTALLATION.STEP3.PATH_EXAMPLE}</Code>
-              <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
-                {INSTALL_CONSTANTS.INSTALLATION.STEP3.PATH_DESCRIPTION_SUFFIX}
-              </span>
-            </p>
+            </Description>
+            <Description className="leading-7 sm:leading-8">
+              {INSTALL_CONSTANTS.INSTALLATION.STEP3.PATH_DESCRIPTION_PREFIX}
+              <Code className="text-black">
+                {INSTALL_CONSTANTS.INSTALLATION.STEP3.PATH_EXAMPLE}
+              </Code>
+              {INSTALL_CONSTANTS.INSTALLATION.STEP3.PATH_DESCRIPTION_SUFFIX}
+            </Description>
           </StepItem>
         </div>
       </div>
