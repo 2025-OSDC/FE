@@ -1,11 +1,84 @@
 @import "tailwindcss";
+@import 'colbrush/styles.css';
+
+@font-face {
+  font-family: "Pretendard Variable";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/PretendardVariable.woff2") format("woff2-variations");
+}
+
+.am5-layer-30 {
+  display: none;
+}
 
 @theme {
   --color-bg: #ffffff;
   --color-red: #ff2727;
-  --color-green: #52c93f;
+  --color-deep-red: #CF1E25;
+  --color-yellow: #FFB720;
+  --color-light-green: #52c93f;
+  --color-green: #008543;
   --color-blue: #006aff;
   --color-gray-blue: #3d4852;
+  --color-deep-blue: #00549F;
+  --color-purple: #884DFF;
+  --color-gray: #909090;
+  --color-light-gray: #d9d9d9;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --shadow-custom: 0 0 6px 0 rgba(0, 0, 0, 0.25);
+
+  --font-pretendard: "Pretendard Variable"
+}
+
+[data-theme='deuteranopia']{
+  --color-bg: #ffffff;
+  --color-red: #ff2727;
+  --color-deep-red: #cf1e25;
+  --color-yellow: #ffb720;
+  --color-light-green: #00ce6c;
+  --color-green: #008543;
+  --color-blue: #006aff;
+  --color-gray-blue: #3d4852;
+  --color-deep-blue: #00549f;
+  --color-purple: #f100a6;
+  --color-gray: #909090;
+  --color-light-gray: #d9d9d9;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+[data-theme='protanopia']{
+  --color-bg: #ffffff;
+  --color-red: #ff2727;
+  --color-deep-red: #cf1e25;
+  --color-yellow: #ffb720;
+  --color-light-green: #00d29a;
+  --color-green: #00887b;
+  --color-blue: #0091d3;
+  --color-gray-blue: #3d4852;
+  --color-deep-blue: #00549f;
+  --color-purple: #884dff;
+  --color-gray: #909090;
+  --color-light-gray: #d9d9d9;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+[data-theme='tritanopia']{
+  --color-bg: #ffffff;
+  --color-red: #ff2727;
+  --color-deep-red: #cf1e25;
+  --color-yellow: #ffb720;
+  --color-light-green: #52c93f;
+  --color-green: #667c12;
+  --color-blue: #006aff;
+  --color-gray-blue: #3d4852;
+  --color-deep-blue: #00549f;
+  --color-purple: #884dff;
   --color-gray: #909090;
   --color-light-gray: #d9d9d9;
   --color-white: #ffffff;
