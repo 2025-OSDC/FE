@@ -3,6 +3,7 @@ import * as am5 from "@amcharts/amcharts5";
 import * as am5xy from "@amcharts/amcharts5/xy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import { THEMES } from "colbrush/client";
+import GraphContainer from "./GraphContainer";
 
 const data = [
   { month: "1월", dormant: 380, loyal: 320, new: 340 },
@@ -116,11 +117,11 @@ function LineChart() {
   }, [theme]);
 
   return (
-    <div className={`flex flex-col min-h-[300px] w-full h-full rounded-[14px] shadow-custom p-6`}>
-      <p className={`text-[18px] text-start mb-4`}>방문자 분석</p>
+    <GraphContainer className={`min-h-[300px]`}>
+      <p className={`lg:text-[18px] max-lg:text-[14px] text-start mb-4`}>방문자 분석</p>
       <div id="chartdiv" className={`w-full grow`} />
       <div></div>
-    </div>
+    </GraphContainer>
   )
 }
 

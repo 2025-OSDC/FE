@@ -3,6 +3,7 @@ import * as am5 from '@amcharts/amcharts5';
 import * as am5percent from '@amcharts/amcharts5/percent';
 import am5themes_Animated from '@amcharts/amcharts5/themes/Animated';
 import { THEMES } from 'colbrush/client';
+import GraphContainer from './GraphContainer';
 
 interface ChartData {
   category: string;
@@ -95,22 +96,22 @@ const DonutChart = () => {
   }, [theme]);
 
   return (
-    <div className="w-full p-6 bg-white rounded-[14px] shadow-custom font-pretendard">
+    <GraphContainer>
       <div className={`flex flex-row items-center justify-between mb-4`}>
-        <p className="text-[18px] font-bold text-gray-800 text-center">
+        <p className={`lg:text-[18px] max-lg:text-[14px] font-bold text-gray-800 text-center`}>
           방문자 분석
         </p>
-        <p className={`text-[12px] rounded-[2px] bg-gray-100 px-2 py-1 text-gray-400`}>Today</p>
+        <p className={`text-[12px] max-lg:text-[10px] rounded-[2px] bg-gray-100 px-2 py-1 text-gray-400`}>Today</p>
       </div>
 
       <div className={`flex items-center justify-center`}>
         <div
           ref={chartRef}
-          className="w-full max-h-[300px] aspect-[5/4] mb-2"
+          className="md:w-full max-h-[300px] aspect-[5/4] mb-2 max-md:w-[50%]"
         />
       </div>
 
-      <div className="p-2">
+      <div className="text-[16px] max-lg:text-[14px] p-2">
         <div className="flex justify-center gap-4 flex-col">
           {data.map((item, index) => (
             <div key={index} className="flex items-center gap-2">
@@ -126,7 +127,7 @@ const DonutChart = () => {
           ))}
         </div>
       </div>
-    </div>
+    </GraphContainer>
   );
 };
 

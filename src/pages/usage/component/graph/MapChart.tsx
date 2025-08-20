@@ -4,6 +4,7 @@ import * as am5map from "@amcharts/amcharts5/map"
 import am5geodata_worldLow from "@amcharts/amcharts5-geodata/worldLow"
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated"
 import { THEMES } from "colbrush/client"
+import GraphContainer from "./GraphContainer"
 
 const MapChart = () => {
 
@@ -78,12 +79,12 @@ const MapChart = () => {
   }, [theme])
 
   return (
-    <div className={`w-full h-full shadow-custom rounded-[14px] p-6 flex flex-col`}>
-      <p className={`text-[18px] text-start mb-4`}>국가별 통계</p>
+    <GraphContainer>
+      <p className={`lg:text-[18px] max-lg:text-[14px] text-start mb-4`}>국가별 통계</p>
       <div className={`grow shrink-0 flex items-center justify-center`}>
-        <div id="mapdiv" className={`w-full aspect-3/2`} />
+        <div id="mapdiv" className={`w-full aspect-5/3`} />
       </div>
-    </div>
+    </GraphContainer>
   )
 }
 
