@@ -1,7 +1,7 @@
 import Code from "../../../../components/code";
 import CodeBlock from "../../../../components/defaultCodeBlock/DefaultCodeBlock";
 import { THEMEPROVIDER } from "../../constants";
-import Description from "../description";
+import Description from "../../../../components/description";
 import SubTitle from "../subTitle";
 import Bullet from "../bullet";
 export default function Step2({ heading1 }: { heading1: string }) {
@@ -16,30 +16,32 @@ export default function Step2({ heading1 }: { heading1: string }) {
       </>
       <section className="space-y-2 sm:space-y-3">
         <SubTitle>
-          <Code className="text-gray-blue text-lg sm:text-xl lg:text-[24px] font-medium">{`<ThemeProvider>`}</Code>
+          <Code className="text-gray-blue text-lg font-medium sm:text-xl lg:text-[24px]">{`<ThemeProvider>`}</Code>
         </SubTitle>
-        <Bullet option="설명: ">
-          애플리케이션에 테마 기능을 전역적으로 제공하는 Context Provider입니다.
+        <Bullet>
+          설명: 애플리케이션에 테마 기능을 전역적으로 제공하는 Context
+          Provider입니다.
         </Bullet>
-        <Bullet option="Props: ">
+        <Bullet className="leading-7 sm:leading-8">
+          Props:
           <Code className="text-black">children</Code>
           (React 노드)
         </Bullet>
-        <Bullet option="사용 예시:"></Bullet>
+        <Bullet>사용 예시:</Bullet>
         <CodeBlock code={THEMEPROVIDER}></CodeBlock>
       </section>
       <section className="space-y-2 sm:space-y-3">
         <SubTitle>
-          <Code className="text-gray-blue text-lg sm:text-xl lg:text-[24px] font-medium">{`<ThemeSwitcher>`}</Code>
+          <Code className="text-gray-blue text-lg font-medium sm:text-xl lg:text-[24px]">{`<ThemeSwitcher>`}</Code>
         </SubTitle>
-        <Bullet option="설명: ">
-          사용자가 테마를 쉽게 변경할 수 있는 드롭다운 UI 컴포넌트입니다.
+        <Bullet>
+          설명: 사용자가 테마를 쉽게 변경할 수 있는 드롭다운 UI 컴포넌트입니다.
         </Bullet>
-        <Bullet option="Props: ">
+        <Bullet className="leading-7 sm:leading-8">
+          Props:
           <Code className="text-black">options</Code>
           (선택 사항): 드롭다운에 표시될 테마 목록을 커스터마이징합니다.
         </Bullet>
-      
       </section>
     </section>
   );
