@@ -5,7 +5,7 @@ import InstallationStep from "./components/InstallationStep";
 
 export default function Install() {
   return (
-    <div className="flex flex-col">
+    <div className="flex min-h-screen flex-col">
       <Banner />
       <Explantation />
       <InstallationStep />

@@ -9,9 +9,11 @@ interface StepItemProps {
 const StepItem = ({ chip, title, children }: StepItemProps) => {
   return (
     <div className="flex flex-col">
-      <div className="mb-5 flex items-center gap-4">
+      <div className="mb-3 flex flex-col gap-2 sm:mb-4 sm:flex-row sm:items-center sm:gap-4 lg:mb-5">
         <Chip>{chip}</Chip>
-        <p className="text-gray-blue text-2xl font-semibold">{title}</p>
+        <p className="text-gray-blue text-lg font-semibold sm:text-xl lg:text-2xl">
+          {title}
+        </p>
       </div>
       {children}
     </div>

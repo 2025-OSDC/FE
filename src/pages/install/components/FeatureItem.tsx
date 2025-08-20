@@ -6,10 +6,14 @@ interface FeatureItemProps {
 
 const FeatureItem = ({ icon, title, children }: FeatureItemProps) => {
   return (
-    <div className="mx-auto flex w-full flex-col gap-3.5">
-      <div className="flex flex-row items-center gap-4.5">
-        {icon}
-        <p className="text-gray-blue text-2xl font-semibold">{title}</p>
+    <div className="mx-auto flex w-full flex-col gap-2 sm:gap-3 lg:gap-3.5">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4.5">
+        <div className="flex items-center gap-2 sm:gap-4.5">
+          {icon}
+          <p className="text-gray-blue text-lg font-semibold sm:text-xl lg:text-2xl">
+            {title}
+          </p>
+        </div>
       </div>
       {children}
     </div>

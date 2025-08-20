@@ -6,10 +6,12 @@ export default function Bullet({
   option?: string;
 }) {
   return (
-    <div className="flex items-center gap-2">
-      <span className="text-gray text-[24px]">•</span>
-      <span className="text-gray text-[18px] font-semibold">{option}</span>
-      <h2 className="text-gray text-[18px]">{children}</h2>
+    <div className="flex items-start gap-1.5 sm:gap-2 mt-5">
+      <span className="text-gray text-lg sm:text-xl lg:text-[24px] flex-shrink-0">•</span>
+      <div className="flex flex-wrap items-center gap-1">
+        <span className="text-gray text-sm sm:text-base lg:text-[18px] font-semibold">{option}</span>
+        <h2 className="text-gray text-sm sm:text-base lg:text-[18px]">{children}</h2>
+      </div>
     </div>
   );
 }

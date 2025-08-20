@@ -6,10 +6,10 @@ import Step4 from "./components/step/step4";
 import Step5 from "./components/step/step5";
 
 export default function Api() {
-  const heading1 = "text-gray-blue text-[32px] font-semibold";
+  const heading1 = "text-gray-blue text-xl sm:text-2xl lg:text-[32px] font-semibold";
   return (
-    <div className="flex w-[100vw] justify-center px-[10%]">
-      <div className="flex w-full max-w-[981px] flex-col gap-[90px] self-center py-[70px]">
+    <div className="flex w-full justify-center px-4 sm:px-8 lg:px-[10%]">
+      <div className="flex w-full max-w-[981px] flex-col gap-12 sm:gap-16 lg:gap-[90px] self-center py-8 sm:py-12 lg:py-[70px]">
         <section className="flex w-full flex-col">
           <h1 className={heading1}>Color-Blind-Theme API</h1>
           <Description>
