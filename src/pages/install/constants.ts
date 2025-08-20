@@ -73,12 +73,7 @@ export const INSTALL_CONSTANTS = {
       TITLE: "CLI로 테마 생성",
       COMMAND: "npx colbrush --generate",
       DESCRIPTION: "CLI 명령어를 실행하면 ",
-      COLOR_BLIND_TYPES: [
-        "protanopia",
-        "deuteranopia",
-        "tritanopia",
-        "achromatopsia",
-      ],
+      COLOR_BLIND_TYPES: ["protanopia", "deuteranopia", "tritanopia"],
       DESCRIPTION_SUFFIX: " 각각에 맞춘 CSS 변수를 자동 생성합니다.",
       PATH_DESCRIPTION_PREFIX: "경로를 지정하면 (",
       PATH_EXAMPLE: "--css=src/index.css",

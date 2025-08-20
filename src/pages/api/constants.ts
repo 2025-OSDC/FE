@@ -1,7 +1,7 @@
 export const INSTALL_COMMAND =
   "pnpm add colbrush\n# 또는\nnpm install colbrush";
 export const THEMEFILE_COMMEND =
-  "/* theme.css */\n[data-theme='default'] {\n\t--color-primary-100: #F5F5F5;\n\t/* ... */\n}";
+  "/* theme.css */\n[data-theme='protanopia'] {\n\t--color-primary-100: #F5F5F5;\n\t/* ... */\n}";
 export const GENERATE_THEME_COMMAND =
   "npx colbrush --generate --css=src/index.css";
 export const THEMEPROVIDER_SETTING =
