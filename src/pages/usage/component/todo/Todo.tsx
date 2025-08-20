@@ -22,12 +22,12 @@ const Todo: React.FC<TodoProps> = ({
 
   return (
     <div className={`rounded-[16px] w-full px-5 py-4 flex flex-col items-start gap-2 bg-white`}>
-      <div className={`text-[12px] py-0.5 px-1.5 w-fit rounded-[4px] ${bgColor} ${textColor}`}>
+      <div className={`text-[12px] max-lg:text-[10px] py-0.5 px-1.5 w-fit rounded-[4px] ${bgColor} ${textColor}`}>
         {number}순위
       </div>
       <div className={`flex flex-col`}>
-        <p className={`text-[18px] text-start`}>{title}</p>
-        <p className={`text-[12px] text-start text-[#787486]`}>{content}</p>
+        <p className={`lg:text-[18px] max-lg:text-[16px] text-start`}>{title}</p>
+        <p className={`text-[12px] max-lg:text-[10px] text-start text-[#787486]`}>{content}</p>
       </div>
     </div>
   )

@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import * as am5 from '@amcharts/amcharts5';
 import * as am5percent from '@amcharts/amcharts5/percent';
 import am5themes_Animated from '@amcharts/amcharts5/themes/Animated';
-import { THEMES } from 'colbrush/client';
+import { useTheme } from 'colbrush/client';
 import GraphContainer from './GraphContainer';
 
 interface ChartData {
@@ -13,7 +13,7 @@ interface ChartData {
 
 const DonutChart = () => {
 
-  const theme = THEMES
+  const theme = useTheme().theme;
 
   console.log(theme)
 
@@ -116,7 +116,7 @@ const DonutChart = () => {
           {data.map((item, index) => (
             <div key={index} className="flex items-center gap-2">
               <div
-                className="w-4 h-4 rounded-full shrink-0"
+                className="w-3 h-3 max-lg:w-2.5 max-lg:h-2.5 rounded-full shrink-0"
                 style={{ backgroundColor: item.color }}
               />
               <span className="text-gray-700 font-medium w-full flex flex-row justify-between items-center">

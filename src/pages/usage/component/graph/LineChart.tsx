@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import * as am5 from "@amcharts/amcharts5";
 import * as am5xy from "@amcharts/amcharts5/xy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
-import { THEMES } from "colbrush/client";
+import { useTheme } from "colbrush/client";
 import GraphContainer from "./GraphContainer";
 
 const data = [
@@ -22,7 +22,7 @@ const data = [
 
 function LineChart() {
 
-  const theme = THEMES;
+  const theme = useTheme().theme;
 
   const rootStyle = getComputedStyle(document.documentElement);
 
@@ -72,7 +72,7 @@ function LineChart() {
     const yRenderer = am5xy.AxisRendererY.new(root, {
       minGridDistance: 50,
     });
-    
+
     yRenderer.labels.template.setAll({
       fontFamily: "Pretendard Variable",
       fontSize: 12,

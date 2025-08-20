@@ -25,29 +25,29 @@ const CustomTooltip = ({
       <div
         className={`
           ${isHover ? `scale-110` : ``}
-          ${bgColor} relative px-6.5 py-6 rounded-[6px] shadow-[0_10px_10px_rgba(0,0,0,0.3)] w-full transition-all ease-out duration-300`}
+          ${bgColor} relative px-6.5 py-6 max-lg:px-4.5 max-lg:py-4 rounded-[6px] shadow-[0_10px_10px_rgba(0,0,0,0.3)] w-full transition-all ease-out duration-300`}
         onMouseOverCapture={() => setIsHover(true)}
         onMouseOutCapture={() => setIsHover(false)}>
-        <p className={`text-[20px] text-white font-medium text-start`}>{text}</p>
+        <p className={`text-[20px] max-lg:text-[16px] text-white font-medium text-start`}>{text}</p>
         <div className={`${bgColor} absolute left-[50%] -translate-x-1/2 -bottom-[10%] rotate-45 w-4 h-4`} />
       </div>
 
       <div
-        className={`pt-5`}
+        className={`pt-5 max-lg:pt-4`}
         onMouseOverCapture={() => setIsHover(true)}
         onMouseOutCapture={() => setIsHover(false)}>
         {state === "WARNING" ? (
           <WarningIcon
-            className={`text-yellow w-10 h-10`} />
+            className={`text-yellow w-10 h-10 max-lg:w-8 max-lg:h-8`} />
         ) : state === "ERROR" ? (
           <ErrorIcon
-            className={`text-deep-red w-10 h-10`} />
+            className={`text-deep-red w-10 h-10 max-lg:w-8 max-lg:h-8`} />
         ) : state === "INFO" ? (
           <InfoIcon
-            className={`text-deep-blue w-10 h-10`} />
+            className={`text-deep-blue w-10 h-10 max-lg:w-8 max-lg:h-8`} />
         ) : (
           <SuccessIcon
-            className={`text-green w-10 h-10`} />
+            className={`text-green w-10 h-10 max-lg:w-8 max-lg:h-8`} />
         )}
       </div>
     </div>

@@ -20,12 +20,12 @@ const Alert = ({ state }: { state: State }) => {
   const text = 
     state === "WARNING" ? `주의가 필요합니다.` :
       state === "ERROR" ? `오류가 발생했습니다.` :
-        state === "INFO" ? `정보를 제공합니다.` : '성공햇습니다.';
+        state === "INFO" ? `정보를 제공합니다.` : '성공했습니다.';
 
   return (
-    <div className={`flex flex-row justify-between items-center w-full text-start font-light text-[18px] rounded-[8px] px-6 py-3.5 border ${borderColor} ${textColor} ${bgColor}`}>
+    <div className={`flex flex-row justify-between items-center w-full text-start font-light lg:text-[18px] max-lg:text-[16px] rounded-[8px] px-6 py-3.5 max-lg:px-4 max-lg:py-3 border transition-all duration-300 ease-out ${borderColor} ${textColor} ${bgColor}`}>
       {text}
-      <CloseIcon className={`w-7 h-7 cursor-pointer`}/>
+      <CloseIcon className={`w-7 h-7 max-lg:w-5 max-lg:h-5 cursor-pointer`}/>
     </div>
   )
 }
