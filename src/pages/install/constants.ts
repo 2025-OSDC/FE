@@ -11,9 +11,9 @@ export const INSTALL_CONSTANTS = {
   // Explanation
   EXPLANATION: {
     COLOR_BLIND_SUPPORT: {
-      TITLE: "4가지 색맹 유형 지원",
+      TITLE: "3가지 색맹 유형 지원",
       DESCRIPTION:
-        " 등 주요 색각 이상 유형을 모두 지원하여, 다양한 시각 조건에서도 명확하게 구분되는 UI를 제공합니다.",
+        " 등 주요 색각 이상 유형을 지원하여, 다양한 시각 조건에서도 명확하게 구분되는 UI를 제공합니다.",
     },
     AUTO_GENERATION: {
       TITLE: "PostCSS 기반 CSS 변수 자동 생성",
@@ -73,12 +73,7 @@ export const INSTALL_CONSTANTS = {
       TITLE: "CLI로 테마 생성",
       COMMAND: "npx colbrush --generate",
       DESCRIPTION: "CLI 명령어를 실행하면 ",
-      COLOR_BLIND_TYPES: [
-        "protanopia",
-        "deuteranopia",
-        "tritanopia",
-        "achromatopsia",
-      ],
+      COLOR_BLIND_TYPES: ["protanopia", "deuteranopia", "tritanopia"],
       DESCRIPTION_SUFFIX: " 각각에 맞춘 CSS 변수를 자동 생성합니다.",
       PATH_DESCRIPTION_PREFIX: "경로를 지정하면 (",
       PATH_EXAMPLE: "--css=src/index.css",

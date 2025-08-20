@@ -8,7 +8,7 @@ export default function Step4({ heading1 }: { heading1: string }) {
       <h1 className={heading1}>4. CLI (Command-Line Interface)</h1>
       <div className="space-y-2 sm:space-y-3">
         <SubTitle>
-          <Code className="text-gray-blue text-lg font-medium sm:text-xl lg:text-[24px]">{`colbrush-cli`}</Code>
+          <Code className="text-gray-blue text-lg font-medium sm:text-xl lg:text-[24px]">{`colbrush`}</Code>
         </SubTitle>
         <Bullet className="leading-7 sm:leading-8">
           <span className="font-semibold">설명: </span>
@@ -17,6 +17,9 @@ export default function Step4({ heading1 }: { heading1: string }) {
         </Bullet>
         <Bullet>
           <span className="font-semibold">명령어: </span>
+          <Code className="text-black">
+            npx colbrush [--generate] [--css=src/index.css]
+          </Code>
         </Bullet>
         <Bullet className="leading-7 sm:leading-8">
           <Code className="text-black">--generate</Code> :{" "}

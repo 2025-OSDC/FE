@@ -124,12 +124,10 @@ const InstallationStep = () => {
             </CodeBlock>
 
             <Description className="mt-3 leading-7 sm:leading-8">
-              <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
-                {INSTALL_CONSTANTS.INSTALLATION.STEP3.DESCRIPTION}
-              </span>
+              {INSTALL_CONSTANTS.INSTALLATION.STEP3.DESCRIPTION}
               {INSTALL_CONSTANTS.INSTALLATION.STEP3.COLOR_BLIND_TYPES.map(
                 (type, index) => (
-                  <span key={type}>
+                  <span key={type} className="leading-7 sm:leading-8">
                     <Code className="text-black">{type}</Code>
                     {index <
                       INSTALL_CONSTANTS.INSTALLATION.STEP3.COLOR_BLIND_TYPES
@@ -138,11 +136,9 @@ const InstallationStep = () => {
                   </span>
                 ),
               )}
-              <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
-                {INSTALL_CONSTANTS.INSTALLATION.STEP3.DESCRIPTION_SUFFIX}
-              </span>
+              {INSTALL_CONSTANTS.INSTALLATION.STEP3.DESCRIPTION_SUFFIX}
             </Description>
-            <Description className="leading-7 sm:leading-8">
+            <Description className="mt-[5px] leading-7 sm:leading-8">
               {INSTALL_CONSTANTS.INSTALLATION.STEP3.PATH_DESCRIPTION_PREFIX}
               <Code className="text-black">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP3.PATH_EXAMPLE}

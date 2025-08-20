@@ -21,7 +21,6 @@ const Explanation = () => {
               INSTALL_CONSTANTS.CODES.PROTANOPIA,
               INSTALL_CONSTANTS.CODES.DEUTERANOPIA,
               INSTALL_CONSTANTS.CODES.TRITANOPIA,
-              INSTALL_CONSTANTS.CODES.ACHROMATOPSIA,
             ].map((type, index, array) => (
               <span key={type}>
                 <Code className="text-black">{type}</Code>
