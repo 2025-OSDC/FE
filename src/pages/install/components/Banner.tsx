@@ -27,7 +27,9 @@ const Banner = () => {
             ),
           )}
         </p>
-        <Button onClick={() => window.open(GITHUB_URL, '_blank')}>{INSTALL_CONSTANTS.GET_STARTED}</Button>
+        <Button onClick={() => window.open(GITHUB_URL, "_blank")}>
+          {INSTALL_CONSTANTS.GET_STARTED}
+        </Button>
       </div>
     </div>
   );
