@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-1">
               <p className="text-gray-blue text-sm font-normal">
-                Developed by Team PATHFINDER
+                Developed by Team ColorBrush
               </p>
               <p className="text-gray-blue text-sm font-normal">
                 Contributors: 윤수호, 김연진, 윤혜성, 이준희, 노하영
