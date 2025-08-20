@@ -17,13 +17,13 @@ const InstallationStep = () => {
             title={INSTALL_CONSTANTS.INSTALLATION.STEP1.TITLE}
           >
             <CodeBlock>
-              <div className="font-['IBM_Plex_Mono'] text-lg font-normal text-white">
+              <div className="text-lg font-normal text-white">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP1.INSTALL_COMMANDS.PNPM}
               </div>
-              <div className="text-gray font-['Pretendard'] text-lg font-normal">
+              <div className="text-gray text-lg font-normal">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP1.INSTALL_COMMANDS.COMMENT}
               </div>
-              <div className="font-['IBM_Plex_Mono'] text-lg font-normal text-white">
+              <div className="text-lg font-normal text-white">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP1.INSTALL_COMMANDS.NPM}
               </div>
             </CodeBlock>
@@ -45,13 +45,13 @@ const InstallationStep = () => {
             title={INSTALL_CONSTANTS.INSTALLATION.STEP2.TITLE}
           >
             <CodeBlock>
-              <div className="font-['IBM_Plex_Mono'] text-lg font-normal">
+              <div className="text-lg font-normal">
                 <span className="text-blue-500">
                   {INSTALL_CONSTANTS.CODES.THEME}
                 </span>
                 <span className="text-white"> {`{`}</span>
               </div>
-              <div className="font-['IBM_Plex_Mono'] text-lg font-normal">
+              <div className="text-lg font-normal">
                 <span className="text-pink-600">
                   {" "}
                   {INSTALL_CONSTANTS.INSTALLATION.STEP2.CSS_VARIABLES.PRIMARY}
@@ -65,7 +65,7 @@ const InstallationStep = () => {
                 </span>
                 <span className="text-white">;</span>
               </div>
-              <div className="font-['IBM_Plex_Mono'] text-lg font-normal">
+              <div className="text-lg font-normal">
                 <span className="text-pink-600">
                   {" "}
                   {INSTALL_CONSTANTS.INSTALLATION.STEP2.CSS_VARIABLES.SECONDARY}
@@ -79,18 +79,21 @@ const InstallationStep = () => {
                 </span>
                 <span className="text-white">;</span>
               </div>
-              <div className="font-['IBM_Plex_Mono'] text-lg font-normal">
+              <div className="text-lg font-normal">
                 <span className="text-pink-600">
                   {" "}
                   {INSTALL_CONSTANTS.INSTALLATION.STEP2.CSS_VARIABLES.GRAY}
                 </span>
                 <span className="text-white">: </span>
                 <span className="text-pink-600">
-                  {INSTALL_CONSTANTS.INSTALLATION.STEP2.CSS_VARIABLES.GRAY_VALUE}
+                  {
+                    INSTALL_CONSTANTS.INSTALLATION.STEP2.CSS_VARIABLES
+                      .GRAY_VALUE
+                  }
                 </span>
                 <span className="text-white">;</span>
               </div>
-              <div className="font-['IBM_Plex_Mono'] text-lg font-normal text-white">{`}`}</div>
+              <div className="text-lg font-normal text-white">{`}`}</div>
             </CodeBlock>
 
             <p className="mt-3">
@@ -116,7 +119,7 @@ const InstallationStep = () => {
             title={INSTALL_CONSTANTS.INSTALLATION.STEP3.TITLE}
           >
             <CodeBlock>
-              <div className="font-['IBM_Plex_Mono'] text-lg font-normal text-white">
+              <div className="text-lg font-normal text-white">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP3.COMMAND}
               </div>
             </CodeBlock>
