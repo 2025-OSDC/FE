@@ -10,12 +10,12 @@ import FeatureItem from "./FeatureItem";
 const Explanation = () => {
   return (
     <div>
-      <div className="mx-auto flex w-5xl flex-col gap-20 py-24">
+      <div className="mx-auto flex w-full max-w-5xl flex-col gap-12 px-4 py-12 sm:gap-16 sm:px-6 sm:py-18 lg:gap-20 lg:px-8 lg:py-24">
         <FeatureItem
           icon={<PeopleIcon />}
           title={INSTALL_CONSTANTS.EXPLANATION.COLOR_BLIND_SUPPORT.TITLE}
         >
-          <p>
+          <p className="flex flex-wrap items-center gap-1">
             {[
               INSTALL_CONSTANTS.CODES.PROTANOPIA,
               INSTALL_CONSTANTS.CODES.DEUTERANOPIA,
@@ -27,7 +27,7 @@ const Explanation = () => {
                 {index < array.length - 1 && " , "}
               </span>
             ))}
-            <span className="text-gray text-lg font-normal">
+            <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
               {INSTALL_CONSTANTS.EXPLANATION.COLOR_BLIND_SUPPORT.DESCRIPTION}
             </span>
           </p>
@@ -37,9 +37,9 @@ const Explanation = () => {
           icon={<MagicIcon />}
           title={INSTALL_CONSTANTS.EXPLANATION.AUTO_GENERATION.TITLE}
         >
-          <p>
+          <p className="flex flex-wrap items-center gap-1">
             <Code>{INSTALL_CONSTANTS.CODES.THEME}</Code>
-            <span className="text-gray text-lg font-normal">
+            <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
               {INSTALL_CONSTANTS.EXPLANATION.AUTO_GENERATION.DESCRIPTION}
             </span>
           </p>
@@ -49,12 +49,12 @@ const Explanation = () => {
           icon={<WindowIcon />}
           title={INSTALL_CONSTANTS.EXPLANATION.THEME_PROVIDER.TITLE}
         >
-          <p>
-            <span className="text-gray text-lg font-normal">
+          <p className="flex flex-wrap items-center gap-1">
+            <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
               {INSTALL_CONSTANTS.EXPLANATION.THEME_PROVIDER.DESCRIPTION_PREFIX}
             </span>
             <Code>{INSTALL_CONSTANTS.CODES.THEME_PROVIDER}</Code>
-            <span className="text-gray text-lg font-normal">
+            <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
               {INSTALL_CONSTANTS.EXPLANATION.THEME_PROVIDER.DESCRIPTION_SUFFIX}
             </span>
           </p>
@@ -65,7 +65,7 @@ const Explanation = () => {
           title={INSTALL_CONSTANTS.EXPLANATION.THEME_SWITCHER.TITLE}
         >
           <p>
-            <span className="text-gray text-lg font-normal">
+            <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
               {INSTALL_CONSTANTS.EXPLANATION.THEME_SWITCHER.DESCRIPTION}
             </span>
           </p>
@@ -76,7 +76,7 @@ const Explanation = () => {
           title={INSTALL_CONSTANTS.EXPLANATION.CUSTOMIZATION.TITLE}
         >
           <p>
-            <span className="text-gray text-lg font-normal">
+            <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
               {INSTALL_CONSTANTS.EXPLANATION.CUSTOMIZATION.DESCRIPTION}
             </span>
           </p>

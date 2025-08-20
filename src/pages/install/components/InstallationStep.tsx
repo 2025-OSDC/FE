@@ -5,30 +5,30 @@ import StepItem from "./StepItem";
 
 const InstallationStep = () => {
   return (
-    <div className="w-full bg-[#f0f0f0] py-14">
-      <div className="mx-auto flex w-5xl flex-col">
-        <p className="mb-16 text-center text-[2rem] font-semibold">
+    <div className="w-full bg-[#f0f0f0] py-8 sm:py-12 lg:py-14">
+      <div className="mx-auto flex w-full max-w-5xl flex-col px-4 sm:px-6 lg:px-8">
+        <p className="mb-8 text-center text-xl font-semibold sm:mb-12 sm:text-2xl lg:mb-16 lg:text-[2rem]">
           {INSTALL_CONSTANTS.INSTALLATION.MAIN_TITLE}
         </p>
 
-        <div className="flex flex-col gap-20">
+        <div className="flex flex-col gap-12 sm:gap-16 lg:gap-20">
           <StepItem
             chip={INSTALL_CONSTANTS.INSTALLATION.STEP1.CHIP}
             title={INSTALL_CONSTANTS.INSTALLATION.STEP1.TITLE}
           >
             <CodeBlock>
-              <div className="text-lg font-normal text-white">
+              <div className="text-sm font-normal text-white sm:text-base lg:text-lg">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP1.INSTALL_COMMANDS.PNPM}
               </div>
-              <div className="text-gray text-lg font-normal">
+              <div className="text-gray text-sm font-normal sm:text-base lg:text-lg">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP1.INSTALL_COMMANDS.COMMENT}
               </div>
-              <div className="text-lg font-normal text-white">
+              <div className="text-sm font-normal text-white sm:text-base lg:text-lg">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP1.INSTALL_COMMANDS.NPM}
               </div>
             </CodeBlock>
 
-            <p className="text-gray mt-3 text-lg font-normal">
+            <p className="text-gray mt-3 text-sm font-normal sm:text-base lg:text-lg">
               {INSTALL_CONSTANTS.INSTALLATION.STEP1.DESCRIPTION.split("\n").map(
                 (line, index) => (
                   <span key={index}>
@@ -45,13 +45,13 @@ const InstallationStep = () => {
             title={INSTALL_CONSTANTS.INSTALLATION.STEP2.TITLE}
           >
             <CodeBlock>
-              <div className="text-lg font-normal">
+              <div className="text-sm font-normal sm:text-base lg:text-lg">
                 <span className="text-blue-500">
                   {INSTALL_CONSTANTS.CODES.THEME}
                 </span>
                 <span className="text-white"> {`{`}</span>
               </div>
-              <div className="text-lg font-normal">
+              <div className="text-sm font-normal sm:text-base lg:text-lg">
                 <span className="text-pink-600">
                   {" "}
                   {INSTALL_CONSTANTS.INSTALLATION.STEP2.CSS_VARIABLES.PRIMARY}
@@ -65,7 +65,7 @@ const InstallationStep = () => {
                 </span>
                 <span className="text-white">;</span>
               </div>
-              <div className="text-lg font-normal">
+              <div className="text-sm font-normal sm:text-base lg:text-lg">
                 <span className="text-pink-600">
                   {" "}
                   {INSTALL_CONSTANTS.INSTALLATION.STEP2.CSS_VARIABLES.SECONDARY}
@@ -79,7 +79,7 @@ const InstallationStep = () => {
                 </span>
                 <span className="text-white">;</span>
               </div>
-              <div className="text-lg font-normal">
+              <div className="text-sm font-normal sm:text-base lg:text-lg">
                 <span className="text-pink-600">
                   {" "}
                   {INSTALL_CONSTANTS.INSTALLATION.STEP2.CSS_VARIABLES.GRAY}
@@ -93,22 +93,22 @@ const InstallationStep = () => {
                 </span>
                 <span className="text-white">;</span>
               </div>
-              <div className="text-lg font-normal text-white">{`}`}</div>
+              <div className="text-sm font-normal text-white sm:text-base lg:text-lg">{`}`}</div>
             </CodeBlock>
 
             <p className="mt-3">
-              <span className="text-gray text-lg font-normal">
+              <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP2.DESCRIPTION_PREFIX}
               </span>
               <Code>{INSTALL_CONSTANTS.CODES.INDEX_CSS}</Code>
-              <span className="text-gray text-lg font-normal">
+              <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP2.DESCRIPTION_SUFFIX}
               </span>
             </p>
 
             <p className="mt-3">
               <Code>{INSTALL_CONSTANTS.CODES.THEME}</Code>
-              <span className="text-gray text-lg font-normal">
+              <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP2.EXPLANATION}
               </span>
             </p>
@@ -119,13 +119,13 @@ const InstallationStep = () => {
             title={INSTALL_CONSTANTS.INSTALLATION.STEP3.TITLE}
           >
             <CodeBlock>
-              <div className="text-lg font-normal text-white">
+              <div className="text-sm font-normal text-white sm:text-base lg:text-lg">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP3.COMMAND}
               </div>
             </CodeBlock>
 
             <p className="mt-3">
-              <span className="text-gray text-lg font-normal">
+              <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP3.DESCRIPTION}
               </span>
               {INSTALL_CONSTANTS.INSTALLATION.STEP3.COLOR_BLIND_TYPES.map(
@@ -139,17 +139,17 @@ const InstallationStep = () => {
                   </span>
                 ),
               )}
-              <span className="text-gray text-lg font-normal">
+              <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP3.DESCRIPTION_SUFFIX}
               </span>
             </p>
 
             <p className="mt-3">
-              <span className="text-gray text-lg font-normal">
+              <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP3.PATH_DESCRIPTION_PREFIX}
               </span>
               <Code>{INSTALL_CONSTANTS.INSTALLATION.STEP3.PATH_EXAMPLE}</Code>
-              <span className="text-gray text-lg font-normal">
+              <span className="text-gray text-sm font-normal sm:text-base lg:text-lg">
                 {INSTALL_CONSTANTS.INSTALLATION.STEP3.PATH_DESCRIPTION_SUFFIX}
               </span>
             </p>

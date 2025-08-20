@@ -4,9 +4,9 @@ import { GITHUB_URL } from "../../../constants/navigation";
 
 const CallToAction = () => {
   return (
-    <div className="flex h-[400px] w-full items-center justify-center">
-      <div className="mx-auto flex flex-col items-center justify-center gap-5 text-center">
-        <p className="text-gray text-xl font-normal">
+    <div className="flex h-[300px] w-full items-center justify-center sm:h-[350px] lg:h-[400px]">
+      <div className="mx-auto flex flex-col items-center justify-center gap-3 px-4 text-center sm:gap-4 lg:gap-5">
+        <p className="text-gray max-w-md text-sm font-normal sm:max-w-lg sm:text-base lg:max-w-xl lg:text-xl">
           {INSTALL_CONSTANTS.CTA.SUBTITLE.split("\n").map((line, index) => (
             <span key={index}>
               {line}
@@ -14,7 +14,7 @@ const CallToAction = () => {
             </span>
           ))}
         </p>
-        <p className="text-gray-blue mb-2 text-3xl font-semibold">
+        <p className="text-gray-blue mb-1 text-xl font-semibold sm:mb-2 sm:text-2xl lg:text-3xl">
           {INSTALL_CONSTANTS.CTA.MAIN_TITLE}
         </p>
         <Button onClick={() => window.open(GITHUB_URL, "_blank")}>
