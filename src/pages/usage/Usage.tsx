@@ -69,15 +69,15 @@ export default function Usage() {
 
         {/* Alert */}
         <div className={`flex flex-col gap-8 max-sm:gap-6`}>
-          <div className={`flex flex-row gap-15 max-md:gap-8 max-sm:flex-col max-sm:gap-6`}>
+          <div className={`flex flex-row gap-10 max-md:gap-8 max-sm:flex-col max-sm:gap-6`}>
             <Alert state={"WARNING"} />
             <Alert state={"INFO"} />
           </div>
-          <div className={`flex flex-row gap-15 max-md:gap-8 max-sm:flex-col max-sm:gap-6`}>
+          <div className={`flex flex-row gap-10 max-md:gap-8 max-sm:flex-col max-sm:gap-6`}>
             <Alert state={"ERROR"} />
             <Alert state={"SUCCESS"} />
           </div>
-          <div className={`flex flex-row gap-15 max-md:gap-8 max-sm:flex-col max-sm:gap-6`}>
+          <div className={`flex flex-row gap-10 max-md:gap-8 max-sm:flex-col max-sm:gap-6`}>
             <TestInput initialText="colbru"/>
             <TestInput/>
           </div>
