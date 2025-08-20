@@ -1,6 +1,6 @@
 import Code from "../../../../components/code";
 import CodeBlock from "../../../../components/defaultCodeBlock/DefaultCodeBlock";
-import { ThemeProvider } from "../../constants";
+import { THEMEPROVIDER } from "../../constants";
 import Description from "../description";
 import SubTitle from "../subTitle";
 import Bullet from "../bullet";
@@ -23,27 +23,12 @@ export default function Step2({ heading1 }: { heading1: string }) {
         </Bullet>
         <Bullet option="Props: ">
           <Code className="text-black">children</Code>
-          <span className="text-gray">(React 노드)</span>
+          (React 노드)
         </Bullet>
         <Bullet option="사용 예시:"></Bullet>
-        <CodeBlock code={ThemeProvider}></CodeBlock>
+        <CodeBlock code={THEMEPROVIDER}></CodeBlock>
       </section>
-      <section className="space-y-2 sm:space-y-3">
-        <SubTitle>
-          <Code className="text-gray-blue text-lg sm:text-xl lg:text-[24px] font-medium">{`<ThemeSwitcher>`}</Code>
-        </SubTitle>
-        <Bullet option="설명: ">
-          사용자가 테마를 쉽게 변경할 수 있는 드롭다운 UI 컴포넌트입니다.
-        </Bullet>
-        <Bullet option="Props: ">
-          <Code className="text-black">Options</Code>
-          <span className="text-gray">
-            (선택 사항): 드롭다운에 표시될 테마 목록을 커스터마이징합니다.
-          </span>
-        </Bullet>
-        <Bullet option="사용 예시:"></Bullet>
-        <CodeBlock code={ThemeProvider}></CodeBlock>
-      </section>
+      
     </section>
   );
 }

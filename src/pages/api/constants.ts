@@ -6,7 +6,7 @@ export const GENERATE_THEME_COMMAND =
   "npx colbrush-cli --generate --css=./styles/theme.css";
 export const THEMEPROVIDER_SETTING =
   "import { ThemeProvider } from 'colbrush/client'; \nexport default function RootLayout({ children }) {  \n\treturn (   \n\t\t<ThemeProvider> \n\t\t\t{children} \n\t\t</ThemeProvider>  \n\t); \n}";
-export const ThemeProvider =
+export const THEMEPROVIDER =
   "import { ThemeProvider } from 'colbrush/client'; \n//...\n<ThemeProvider initialTheme=\"deuteranopia\"> \n\t<MyApp /> \n</ThemeProvider>";
 export const USETHEME =
   "import { useTheme } from 'colbrush'; \nfunction ThemeButtons() {\n\tconst { theme, updateTheme, language, updateLanguage } = useTheme();\n\n\treturn (\n\t\t<>\n\t\t\t<button onClick={() => updateTheme('protanopia')}> \n\t\t\t\t적색맹 모드 \n\t\t\t</button>\n\t\t\t<button onClick={() => updateLanguage('English')}> \n\t\t\t\t영어 모드 \n\t\t\t</button> \n\t\t</>\n\t); \n}";
