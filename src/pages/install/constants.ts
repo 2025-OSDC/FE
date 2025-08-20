@@ -71,7 +71,7 @@ export const INSTALL_CONSTANTS = {
     STEP3: {
       CHIP: "Step 3",
       TITLE: "CLI로 테마 생성",
-      COMMAND: "npx cb-theme --generate",
+      COMMAND: "npx colbrush --generate",
       DESCRIPTION: "CLI 명령어를 실행하면 ",
       COLOR_BLIND_TYPES: [
         "protanopia",
