@@ -13,18 +13,18 @@ export const INSTALL_CONSTANTS = {
     COLOR_BLIND_SUPPORT: {
       TITLE: "4가지 색맹 유형 지원",
       DESCRIPTION:
-        "등 주요 색각 이상 유형을 모두 지원하여, 다양한 시각 조건에서도 명확하게 구분되는 UI를 제공합니다.",
+        " 등 주요 색각 이상 유형을 모두 지원하여, 다양한 시각 조건에서도 명확하게 구분되는 UI를 제공합니다.",
     },
     AUTO_GENERATION: {
       TITLE: "PostCSS 기반 CSS 변수 자동 생성",
       DESCRIPTION:
-        "구문으로 색상 팔레트를 정의하면, 색맹 유형별 변환 색상을 자동으로 CSS 변수에 반영하여 개발자가 반복 작업 없이 접근성 테마를 완성할 수 있습니다.",
+        " 구문으로 색상 팔레트를 정의하면, 색맹 유형별 변환 색상을 자동으로 CSS 변수에 반영하여 개발자가 반복 작업 없이 접근성 테마를 완성할 수 있습니다.",
     },
     THEME_PROVIDER: {
       TITLE: "React Context 기반 ThemeProvider",
-      DESCRIPTION_PREFIX: "앱 전역에서 테마 상태를 쉽게 공유할 수 있도록",
+      DESCRIPTION_PREFIX: "앱 전역에서 테마 상태를 쉽게 공유할 수 있도록 ",
       DESCRIPTION_SUFFIX:
-        "를 제공하며 모든 컴포넌트가 일관된 접근성 색상 규칙을 적용받습니다.",
+        " 를 제공하며 모든 컴포넌트가 일관된 접근성 색상 규칙을 적용받습니다.",
     },
     THEME_SWITCHER: {
       TITLE: "접근성 고려 ThemeSwitcher 컴포넌트",
@@ -63,23 +63,23 @@ export const INSTALL_CONSTANTS = {
         GRAY: "--color-default-gray-500",
         GRAY_VALUE: "#c3c3c3",
       },
-      DESCRIPTION_PREFIX: "전역 CSS 파일(",
-      DESCRIPTION_SUFFIX: ")에 다음 코드를 추가합니다.",
+      DESCRIPTION_PREFIX: "전역 CSS 파일( ",
+      DESCRIPTION_SUFFIX: " )에 다음 코드를 추가합니다.",
       EXPLANATION:
-        "구문을 사용하면 PostCSS 플러그인이 자동으로 색맹 유형별 변환 색상 변수를 생성할 준비를 합니다.",
+        " 구문을 사용하면 PostCSS 플러그인이 자동으로 색맹 유형별 변환 색상 변수를 생성할 준비를 합니다.",
     },
     STEP3: {
       CHIP: "Step 3",
       TITLE: "CLI로 테마 생성",
       COMMAND: "npx cb-theme --generate",
-      DESCRIPTION: "CLI 명령어를 실행하면",
+      DESCRIPTION: "CLI 명령어를 실행하면 ",
       COLOR_BLIND_TYPES: [
         "protanopia",
         "deuteranopia",
         "tritanopia",
         "achromatopsia",
       ],
-      DESCRIPTION_SUFFIX: "각각에 맞춘 CSS 변수를 자동 생성합니다.",
+      DESCRIPTION_SUFFIX: " 각각에 맞춘 CSS 변수를 자동 생성합니다.",
       PATH_DESCRIPTION_PREFIX: "경로를 지정하면 (",
       PATH_EXAMPLE: "--css=src/index.css",
       PATH_DESCRIPTION_SUFFIX: ") 원하는 CSS 파일에 바로 생성할 수도 있습니다.",
