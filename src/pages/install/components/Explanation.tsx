@@ -16,10 +16,15 @@ const Explanation = () => {
           title={INSTALL_CONSTANTS.EXPLANATION.COLOR_BLIND_SUPPORT.TITLE}
         >
           <p>
-            {[INSTALL_CONSTANTS.CODES.PROTANOPIA, INSTALL_CONSTANTS.CODES.DEUTERANOPIA, INSTALL_CONSTANTS.CODES.TRITANOPIA, INSTALL_CONSTANTS.CODES.ACHROMATOPSIA].map((type, index, array) => (
+            {[
+              INSTALL_CONSTANTS.CODES.PROTANOPIA,
+              INSTALL_CONSTANTS.CODES.DEUTERANOPIA,
+              INSTALL_CONSTANTS.CODES.TRITANOPIA,
+              INSTALL_CONSTANTS.CODES.ACHROMATOPSIA,
+            ].map((type, index, array) => (
               <span key={type}>
                 <Code>{type}</Code>
-                {index < array.length - 1 && ' , '}
+                {index < array.length - 1 && " , "}
               </span>
             ))}
             <span className="text-gray text-lg font-normal">
