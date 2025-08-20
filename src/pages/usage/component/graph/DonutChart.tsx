@@ -15,8 +15,6 @@ const DonutChart = () => {
 
   const theme = useTheme().theme;
 
-  console.log(theme)
-
   const rootStyle = getComputedStyle(document.documentElement);
 
   const data = [
