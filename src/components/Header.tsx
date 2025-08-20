@@ -54,7 +54,7 @@ export default function Header() {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="flex h-6 w-6 flex-col items-center justify-center space-y-1 sm:hidden"
+            className="flex h-6 w-6 flex-col items-center justify-center space-y-1 sm:hidden cursor-pointer"
             aria-label="Toggle mobile menu"
           >
             <span
