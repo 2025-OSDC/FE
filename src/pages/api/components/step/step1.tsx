@@ -36,7 +36,7 @@ export default function Step1({ heading1 }: { heading1: string }) {
       </section>
       <section className="space-y-2 sm:space-y-3">
         <SubTitle>ThemeProvider 설정</SubTitle>
-        <Description>
+        <Description className="leading-7 sm:leading-8">
           앱의 루트 컴포넌트를 <Code className="text-black">ThemeProvider</Code>
           로 감싸서 전역 테마 관리를 시작합니다.
         </Description>
