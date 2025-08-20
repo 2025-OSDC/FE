@@ -5,5 +5,5 @@ export default function Description({
 }: {
   children: React.ReactNode;
 }) {
-  return <p className="text-gray text-[18px] font-normal">{children}</p>;
+  return <p className="text-gray text-sm sm:text-base lg:text-[18px] font-normal">{children}</p>;
 }
