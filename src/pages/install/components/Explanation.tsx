@@ -4,7 +4,7 @@ import { PaletteIcon } from "../../../components/icons/PaletteIcon";
 import { PeopleIcon } from "../../../components/icons/PeopleIcon";
 import { SlidersIcon } from "../../../components/icons/SlidersIcon";
 import { WindowIcon } from "../../../components/icons/WindowIcon";
-import Description from "../../api/components/description";
+import Description from "../../../components/description";
 import { INSTALL_CONSTANTS } from "../constants";
 import FeatureItem from "./FeatureItem";
 

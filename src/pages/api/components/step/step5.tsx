@@ -1,7 +1,7 @@
 import CodeBlock from "../../../../components/defaultCodeBlock/DefaultCodeBlock";
 import { LICENSE } from "../../constants";
 import Bullet from "../bullet";
-import Description from "../description";
+import Description from "../../../../components/description";
 
 export default function Step5({ heading1 }: { heading1: string }) {
   return (

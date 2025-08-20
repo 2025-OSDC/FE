@@ -1,6 +1,6 @@
 import Code from "../../../components/code";
 import CodeBlock from "../../../components/codeblock";
-import Description from "../../api/components/description";
+import Description from "../../../components/description";
 import { INSTALL_CONSTANTS } from "../constants";
 import StepItem from "./StepItem";
 

@@ -6,7 +6,7 @@ import {
   THEMEPROVIDER_SETTING,
 } from "../../constants";
 import SubTitle from "../subTitle";
-import Description from "../description";
+import Description from "../../../../components/description";
 import Code from "../../../../components/code";
 
 export default function Step1({ heading1 }: { heading1: string }) {
