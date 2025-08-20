@@ -3,7 +3,7 @@ export const INSTALL_COMMAND =
 export const THEMEFILE_COMMEND =
   "/* theme.css */\n[data-theme='default'] {\n\t--color-primary-100: #F5F5F5;\n\t/* ... */\n}";
 export const GENERATE_THEME_COMMAND =
-  "npx colbrush-cli --generate --css=./styles/theme.css";
+  "npx colbrush --generate --css=./styles/theme.css";
 export const THEMEPROVIDER_SETTING =
   "import { ThemeProvider } from 'colbrush/client'; \nexport default function RootLayout({ children }) {  \n\treturn (   \n\t\t<ThemeProvider> \n\t\t\t{children} \n\t\t</ThemeProvider>  \n\t); \n}";
 export const THEMEPROVIDER =
