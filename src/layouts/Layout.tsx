@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { ThemeProvider, ThemeSwitcher } from "colbrush";
+import { ThemeProvider, ThemeSwitcher } from "colbrush/client";
 
 export default function Layout() {
   return (
@@ -10,7 +10,7 @@ export default function Layout() {
       <main className="flex-1">
         <ThemeProvider>
           <Outlet />
-          <ThemeSwitcher className={`bottom-10 right-10`}/>
+          <ThemeSwitcher />
         </ThemeProvider>
       </main>
       <Footer />

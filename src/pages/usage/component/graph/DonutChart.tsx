@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import * as am5 from '@amcharts/amcharts5';
 import * as am5percent from '@amcharts/amcharts5/percent';
 import am5themes_Animated from '@amcharts/amcharts5/themes/Animated';
-import { useTheme } from 'colbrush';
+import { THEMES } from 'colbrush/client';
 
 interface ChartData {
   category: string;
@@ -12,7 +12,9 @@ interface ChartData {
 
 const DonutChart = () => {
 
-  const theme = useTheme().theme;
+  const theme = THEMES
+
+  console.log(theme)
 
   const rootStyle = getComputedStyle(document.documentElement);
 
@@ -104,7 +106,7 @@ const DonutChart = () => {
       <div className={`flex items-center justify-center`}>
         <div
           ref={chartRef}
-          className="w-[70%] aspect-square mb-2"
+          className="w-full max-h-[300px] aspect-[5/4] mb-2"
         />
       </div>
 

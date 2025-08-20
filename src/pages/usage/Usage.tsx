@@ -1,10 +1,11 @@
-import DonutChart from "../components/graph/DonutChart";
-import LineChart from "../components/graph/LineChart";
-import MapChart from "../components/graph/MapChart";
-import ProductChart from "../components/graph/ProductChart";
-import TodoList from "../components/todo/TodoList";
-import { COLORS, TODOS } from "../mocks/usage";
-import CustomTooltip from "../components/tooltip/Tooltip";
+import DonutChart from "./component/graph/DonutChart";
+import LineChart from "./component/graph/LineChart";
+import MapChart from "./component/graph/MapChart";
+import ProductChart from "./component/graph/ProductChart";
+import TodoList from "./component/todo/TodoList";
+import { COLORS, TODOS } from "./mocks/usage";
+import CustomTooltip from "./component/tooltip/Tooltip";
+import Alert from "./component/alert/Alert";
 
 export default function Usage() {
 
@@ -53,7 +54,7 @@ export default function Usage() {
           </div>
         </div>
 
-        {/* 툴팁 */}
+        {/* Tooltip */}
         <div className={`flex flex-col gap-10 px-[8%]`}>
           <div className={`flex flex-row gap-10`}>
             <CustomTooltip state={"WARNING"} />
@@ -62,6 +63,18 @@ export default function Usage() {
           <div className={`flex flex-row gap-10`}>
             <CustomTooltip state={"ERROR"} />
             <CustomTooltip state={"SUCCESS"} />
+          </div>
+        </div>
+
+        {/* Alert */}
+        <div className={`flex flex-col gap-8`}>
+          <div className={`flex flex-row gap-15`}>
+            <Alert state={"WARNING"} />
+            <Alert state={"INFO"} />
+          </div>
+          <div className={`flex flex-row gap-15`}>
+            <Alert state={"ERROR"} />
+            <Alert state={"SUCCESS"} />
           </div>
         </div>
       </div>

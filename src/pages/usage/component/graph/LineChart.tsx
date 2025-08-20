@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import * as am5 from "@amcharts/amcharts5";
 import * as am5xy from "@amcharts/amcharts5/xy";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
-import { useTheme } from "colbrush";
+import { THEMES } from "colbrush/client";
 
 const data = [
   { month: "1월", dormant: 380, loyal: 320, new: 340 },
@@ -21,7 +21,7 @@ const data = [
 
 function LineChart() {
 
-  const theme = useTheme().theme;
+  const theme = THEMES;
 
   const rootStyle = getComputedStyle(document.documentElement);
 
@@ -116,7 +116,7 @@ function LineChart() {
   }, [theme]);
 
   return (
-    <div className={`flex flex-col w-full h-full rounded-[14px] shadow-custom p-6`}>
+    <div className={`flex flex-col min-h-[300px] w-full h-full rounded-[14px] shadow-custom p-6`}>
       <p className={`text-[18px] text-start mb-4`}>방문자 분석</p>
       <div id="chartdiv" className={`w-full grow`} />
       <div></div>
